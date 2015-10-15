@@ -1,0 +1,46 @@
+.navbarstyle {
+	background-color: #9966FF;
+	color: #FFFFFF;
+}
+
+.link {
+	color: #FFFFFF;
+}
+
+.brandstyle {
+	font-size: 200%;
+	font-weight: 500;
+	font-family: "Futura";
+}
+
+.largetitle {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	font-size: 600%;
+	font-family: "Michroma";
+	color: #66FFE6;
+}
+
+.card {
+	border-style: solid;
+	border-color: #D0D0D0;
+	border-width: 2px;
+	border-top-color: #FF6680;
+	border-top-width: 8px;
+	background-color: #F0F0F0;
+	left-margin: 2px;
+	height: 100%;
+
+
+}
+.contentblock {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-family: "Century Gothic";
+}
+
+/*.containerstyle {
+	border-style: dotted;
+	border-width: 2px;
+	margin: 2px;
+}*/
