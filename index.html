@@ -4,8 +4,9 @@
     <title>Jordan Bryan</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Dosis:700,500|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>    
-    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis:700,500|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="static/css/styles.css">
   </head>
 
   <body> 
@@ -25,8 +26,9 @@
 
             <ul class="nav .navbar-justified navbar-nav">
               <li><a class="link" href="#">Home</a></li>
-              <li><a class="link" href="#skateboard">Work Experience</a></li>
-              <li><a class="link" href="#">Downhill Skateboarding</a></li>
+              <li><a class="link" href="#experience">Work Experience</a></li>
+              <li><a class="link" href="#education">Education</a></li>
+              <li><a class="link" href="#skateboard">Downhill Skateboarding</a></li>
             </ul>
 
           </div>
@@ -36,53 +38,151 @@
       </div>
 
     </header> 
-     
-    <!-- <div class="container" id="home"> -->
-    <div class="jumbotron skateboard container-fluid" id="skateboard">
-      <h1>Jordan Bryan<h1>
+
+
+    <div class="jumbotron container-fluid" id="home">
+      <h1>Jordan Bryan</h1>
+      <a href="#"class="btn">View Resume</a>
+      <a href="https://www.linkedin.com/profile/view?id=AAMAABZbOsQBhDcg-a5zTR6sO1Q44g8At2MIv3U"class="btn">Connect On LinkedIn</a>
     </div>
 
-    <div class="bar">
-      <h3>Work Experience<h1>
-    </div>
-    
-    <div class="jumbotron container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Cumulus Consulting</h4>
-            <img src="static/images/cumulus.jpg" alt="Cumulus Consulting image" class="img-responsive">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+    <div class="container-fluid" id="experience">
+      <div class="bar">
+        <h3>Work Experience</h3>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <h4>Cumulus Consulting</h4>
+              <center><img src="static/images/cumulus.jpg" alt="Cumulus Consulting image" class="img-circle img-responsive"></center>
+              <!-- <br><br> -->
+              <ul>
+                <li>Developed T-SQL stored procedures to display client specified data from the PLEX Systems database</li>
+                <li>Developed web service in C# to automate renaming files for clients</li>
+                <li>Implemented authentication of ASP.NET MVC application</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Quicken Loans</h4>
-            <img src="static/images/QuickenLoans.jpg" alt="Quicken Loans image" class="img-responsive">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <div class="col-md-4">
+            <div class="card">
+              <h4>Quicken Loans</h4>
+              <center><img src="static/images/QuickenLoans.jpg" alt="Quicken Loans image" class="img-circle img-responsive"></center>
+              <!-- <br><br> -->
+              <ul>
+                <li>Reduced load time of www.quickenloans.com through auditing frontend performance</li>
+                <li>Monitored site traffic of www.quickenloans.com and www.myql.com to ensure site stability</li>
+                <li>Created/maintained automated website alerts through IBM Tealeaf</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Sugar Urethane</h4>
-            <img src="static/images/SugarUrethane.jpg" alt="Sugar Urethane image" class="img-responsive">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <div class="col-md-4">
+            <div class="card">
+              <h4>Sugar Urethane</h4>
+              <center><img src="static/images/SugarUrethane.jpg" alt="Sugar Urethane image" class="img-responsive img-circle"></center>
+              <!-- <br><br> -->
+              <ul>
+                <li>Increased brand recognition in competitive market through social media and video media</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-      
-    <div class="floatingbuttons navbar-fixed-bottom">
-      <a href="#"class="navbar-btn btn-danger btn">View Resume</a>
-      <a href="https://www.linkedin.com/profile/view?id=AAMAABZbOsQBhDcg-a5zTR6sO1Q44g8At2MIv3U"class="navbar-btn btn-info btn">Connect On LinkedIn</a>
+    <div class="jumbotron container-fluid" id="umich">
     </div>
 
+
+    <dic class="container-fluid" id="education">
+      <div class="bar">
+        <h3>Education</h3>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <h4>Skills</h4>
+              <ul>
+                <li><em>Programming Languages/Frameworks:</em> C++, C, C#, Java, Python, JavaScript, HTML, CSS, T-SQL, .NET framework, ASP.NET MVC </li>
+                <li><em>Development Tools:</em> Android Studio, Xcode, Visual Studio, SQL Server Management Studio, AutoHotKey, IBM Tealeaf, Git, GDB, Unix, Linux, Bash, PowerShell</li>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4>University of Michigan</h4>
+              <center><img src="static/images/UofM.gif" alt="Cumulus Consulting image" class="img-responsive" style="height:300px; width:300px;"></center>
+              <p>Bachelor of Science in Computer Science, Class of 2017 (current Junior)</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4>Coursework</h4>
+              <!-- <br><br> -->
+              <ul>
+                <li><em>EECS 281</em> - Data Structures and Algorithms</li>
+                <li><em>EECS 485</em> - Web Databases and Information Systems (In progress)</li>
+                <li><em>EECS 376</em> - Foundations of Computer Science (In progress)</li>
+                <li><em>EECS 370</em> - Computer Organization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron container-fluid" id="soldiers">
+    </div>
+
+    <div class"container-fluid" id="skateboard">
+      <div class="bar">
+        <h3>Downhill Skateboarding</h3>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="col-xs-6">
+            <div class="card">
+              <h4>About</h4>
+              <p>In my free time, I enjoy downhill skateboarding. I have travelled around the country for downhill skateboarding races, and I intend to further pursue my passion of downhill skateboarding.</p>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="card">
+              <h4>Accomplishments</h4>
+              <ul class="accomplishments">
+                <li>3rd place at the <em>2015 IDF Munnsville Gravity Fest</em></li>
+                <li>7th place at the <em>2015 Soldiers of Downhill</em></li>
+                <li>4th place at the <em>2015 Rage at the Ridge</em></li>
+                <li>1st place at the <em>2014 Grand Rapids Urban Downhill</em></li>
+                <li>1st place at the <em>2012 Rochester Hills Invitational</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-xs-4">
+              <img src="static/images/CAN.jpg" alt="CAN image" class="img-responsive img-rounded">
+          </div>
+          <div class="col-xs-4">
+              <img src="static/images/GRDH.jpg" alt="GRDH image" class="img-responsive img-rounded">
+          </div>
+          <div class="col-xs-4">
+              <img src="static/images/Maryhill.jpg" alt="Maryhill image" class="img-responsive img-rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="static/js/custom.js"></script>
+    <!-- <script src="static/js/custom.js"></script> -->
      
   </body>
 </html>
