@@ -1,0 +1,103 @@
+ul {
+  text-align: left; }
+
+.body {
+  text-align: center; }
+
+.container-fluid {
+  padding: 0px; }
+
+.navbar {
+  background-color: white;
+  text-align: center;
+  padding: 0px; }
+  .navbar a {
+    text-align: right;
+    color: #62A1FF;
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    height: 100%; }
+    .navbar a:visited {
+      color: #62A1FF; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+
+.jumbotron {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  height: 400px;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%, 100%;
+  opacity: .85; }
+  .jumbotron h1 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 170px;
+    font-weight: 700;
+    color: white;
+    opacity: 1; }
+
+#soldiers {
+  background-image: url("../images/Soldiers.jpg"); }
+
+#umich {
+  background-image: url("../images/AngellHall.jpg"); }
+
+#home {
+  background-image: url("../images/Profile.jpg");
+  height: 700px; }
+
+.bar {
+  background-color: #62A1FF;
+  text-align: center; }
+  .bar h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: white; }
+
+.btn {
+  background-color: none;
+  border-color: #4b077f;
+  border-width: 5px;
+  color: white;
+  width: 170px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px; }
+  .btn:hover {
+    background-color: #6709B0;
+    color: white; }
+  .btn:visited {
+    color: white; }
+  .btn:active, .btn .active {
+    background-color: #b35bf7;
+    color: white; }
+
+.card {
+  font-family: "Nunito", "Calibri", sans-serif;
+  font-size: 20px;
+  color: #808080;
+  margin: 30px;
+  text-align: center; }
+  .card h3 {
+    color: #6709B0;
+    font-size: 200%;
+    font-weight: 400; }
+  .card li {
+    margin: 10px; }
+
+.img-circle {
+  border-radius: 50%;
+  height: 200px;
+  margin: 30px;
+  text-align: center; }
+
+/*# sourceMappingURL=sassStyle.css.map */

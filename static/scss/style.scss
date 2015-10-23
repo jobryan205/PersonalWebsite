@@ -1,0 +1,158 @@
+
+// Font variables
+$font-family-primary: 'Dosis', sans-serif;
+$font-family-secondary: 'Nunito', "Calibri", sans-serif;
+$font-size-l-heading: 170px;
+$font-size-m-heading: 64px;
+$font-size-body: 20px;
+
+//Color variables
+$color-primary: #62A1FF;
+$color-secondary: #6709B0;
+$color-tertiary: white;
+$color-text: #808080;
+$color-variation:10%;
+
+
+ul {
+	text-align: left;
+}
+
+// div {
+// 	border-style: solid;
+// 	border-color: black;
+// 	border-width: 1px;
+// }
+
+.body {
+	text-align:center;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.navbar {
+	background-color: $color-tertiary;
+	text-align: center;
+	padding: 0px;
+
+	a {
+		text-align: right;
+		color: $color-primary;
+		font-family: $font-family-primary;
+		font-size: 24px;
+		height: 100%;
+
+		&:visited{
+			color: $color-primary;
+		}
+
+	}
+
+	.navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+}
+
+.jumbotron {
+	padding: 0px;
+	margin: 0px;
+	color: $color-tertiary;
+	height: 400px;
+	text-align: center;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%, 100%;
+	opacity: .85;
+
+	h1 {
+		margin-top: 200px;
+		margin-bottom: 200px;
+		text-align: center;
+		font-family: $font-family-primary;
+		font-size: $font-size-l-heading;
+		font-weight: 700;
+		color: $color-tertiary;
+		opacity: 1;
+	}
+}
+
+#soldiers {
+		background-image: url("../images/Soldiers.jpg");
+}
+
+#umich {
+	background-image: url("../images/AngellHall.jpg");
+}
+
+#home {
+		background-image: url("../images/Profile.jpg");
+		height: 700px;
+}
+
+.bar {
+	background-color: $color-primary;
+	text-align: center;
+
+	h2 {
+		font-family: $font-family-primary;
+		font-weight: 900;
+		font-size: $font-size-m-heading;
+		color: $color-tertiary;
+	}
+}
+
+.btn {
+	background-color: none;
+	border-color: darken($color-secondary, $color-variation);
+	border-width: 5px;
+	color: $color-tertiary;
+	width: 170px;
+	height: 50px;
+	margin: 10px;
+	padding: 10px;
+
+	&:hover {
+		background-color: $color-secondary;
+		color: $color-tertiary;
+	}
+
+	&:visited{
+		color: $color-tertiary;
+	}
+
+	&:active, .active {
+		background-color: lighten($color-secondary, $color-variation * 3);
+		color: $color-tertiary;
+	}
+}
+
+
+.card {
+	font-family: $font-family-secondary;
+	font-size: $font-size-body;
+	color: $color-text;
+	margin: 30px;
+	text-align: center;
+
+	h3{
+		color: $color-secondary;
+		font-size: 200%;
+		font-weight: 400;
+	}
+
+	li {
+		margin: 10px;
+	}
+}
+
+.img-circle {
+	border-radius: 50%;
+	height: 200px;
+	margin: 30px;
+	text-align: center;
+}
