@@ -5,7 +5,7 @@ $font-family-secondary: 'Nunito', "Calibri", sans-serif;
 $font-size-l-heading: 170px;
 $font-size-m-heading: 64px;
 $font-size-body: 20px;
-
+// pieagu01@yahoo-inc.com
 //Color variables
 $color-primary: #62A1FF;
 $color-secondary: #6709B0;
@@ -13,16 +13,91 @@ $color-tertiary: white;
 $color-text: #808080;
 $color-variation:10%;
 
+//Screen size variables
+$screen-xs: null;
+$screen-s: 768px;
+$screen-m: 992px;
+$screen-l: 1200px;
+
+$h1-font-sizes: (
+	$screen-xs: 6em,
+	$screen-s: 7em,
+	$screen-m: 9em,
+	$screen-l: 13em
+);
+
+$h2-font-sizes: (
+	$screen-xs: 3em,
+	$screen-m: 4em,
+	$screen-l: 5em
+);
+
+$h1-margin-sizes: (
+	$screen-xs: 50px,
+	$screen-s: 100px,
+	$screen-m: 150px,
+	$screen-l: 200px
+);
+
+$jumbotron-sizes: (
+	$screen-xs: 200px,
+	$screen-s: 300px,
+	$screen-m: 400px
+);
+
+$home-jumbotron-sizes: (
+	$screen-xs: 400px,
+	$screen-s: 500px,
+	$screen-m: 600px,
+	$screen-l: 700px
+);
 
 ul {
 	text-align: left;
 }
 
-// div {
-// 	border-style: solid;
-// 	border-color: black;
-// 	border-width: 1px;
-// }
+
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+@mixin height-size($fs-map) {
+  @each $fs-breakpoint, $fs-height in $fs-map {
+    @if $fs-breakpoint == null {
+      height: $fs-height;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        height: $fs-height;
+      }
+    }
+  }
+}
+
+@mixin margin-size($fs-map) {
+  @each $fs-breakpoint, $fs-margin in $fs-map {
+    @if $fs-breakpoint == null {
+      margin-top: $fs-margin;
+      margin-bottom: $fs-margin;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        margin-top: $fs-margin;
+        margin-bottom: $fs-margin;
+      }
+    }
+  }
+}
 
 .body {
 	text-align:center;
@@ -62,27 +137,37 @@ ul {
 	padding: 0px;
 	margin: 0px;
 	color: $color-tertiary;
-	height: 400px;
 	text-align: center;
 	background-position: center;
 	background-attachment: fixed;
-	background-size: 100%, 100%;
+	background-size: cover;
 	opacity: .85;
+	@include height-size($jumbotron-sizes);
 
 	h1 {
-		margin-top: 200px;
-		margin-bottom: 200px;
+		// margin: 200px;
 		text-align: center;
 		font-family: $font-family-primary;
-		font-size: $font-size-l-heading;
+		// font-size: 13em;
+		text-shadow: 0 0 30px black;
 		font-weight: 700;
 		color: $color-tertiary;
 		opacity: 1;
+
+		font-size: 12vw;
+		margin-top: 12vw;
+		margin-bottom: 12vw;
+		margin-left: 0px;
+		margin-right: 0px; 
+		@include margin-size($h1-margin-sizes);
+		// @include font-size($h1-font-sizes);
+		
 	}
+	
 }
 
 #soldiers {
-		background-image: url("../images/Soldiers.jpg");
+	background-image: url("../images/Soldiers.jpg");
 }
 
 #umich {
@@ -90,8 +175,12 @@ ul {
 }
 
 #home {
-		background-image: url("../images/Profile.jpg");
-		height: 700px;
+	background-image: url("../images/Profile.jpg");
+	@media screen and (max-width: $screen-s) {
+		background-image: url("../images/ProfileSmall.jpg");
+		background-size: cover;
+	}
+	@include height-size($home-jumbotron-sizes);
 }
 
 .bar {
@@ -101,8 +190,12 @@ ul {
 	h2 {
 		font-family: $font-family-primary;
 		font-weight: 900;
-		font-size: $font-size-m-heading;
+		// font-size: $font-size-m-heading;
 		color: $color-tertiary;
+		margin: 0;
+		padding: 0;
+
+		@include font-size($h2-font-sizes);
 	}
 }
 

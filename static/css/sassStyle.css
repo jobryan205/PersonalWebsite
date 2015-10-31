@@ -28,21 +28,44 @@ ul {
   padding: 0px;
   margin: 0px;
   color: white;
-  height: 400px;
   text-align: center;
   background-position: center;
   background-attachment: fixed;
-  background-size: 100%, 100%;
-  opacity: .85; }
+  background-size: cover;
+  opacity: .85;
+  height: 200px; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      height: 300px; } }
+  @media screen and (min-width: 992px) {
+    .jumbotron {
+      height: 400px; } }
   .jumbotron h1 {
-    margin-top: 200px;
-    margin-bottom: 200px;
     text-align: center;
     font-family: "Dosis", sans-serif;
-    font-size: 170px;
+    text-shadow: 0 0 30px black;
     font-weight: 700;
     color: white;
-    opacity: 1; }
+    opacity: 1;
+    font-size: 12vw;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      .jumbotron h1 {
+        margin-top: 100px;
+        margin-bottom: 100px; } }
+    @media screen and (min-width: 992px) {
+      .jumbotron h1 {
+        margin-top: 150px;
+        margin-bottom: 150px; } }
+    @media screen and (min-width: 1200px) {
+      .jumbotron h1 {
+        margin-top: 200px;
+        margin-bottom: 200px; } }
 
 #soldiers {
   background-image: url("../images/Soldiers.jpg"); }
@@ -52,7 +75,20 @@ ul {
 
 #home {
   background-image: url("../images/Profile.jpg");
-  height: 700px; }
+  height: 400px; }
+  @media screen and (max-width: 768px) {
+    #home {
+      background-image: url("../images/ProfileSmall.jpg");
+      background-size: cover; } }
+  @media screen and (min-width: 768px) {
+    #home {
+      height: 500px; } }
+  @media screen and (min-width: 992px) {
+    #home {
+      height: 600px; } }
+  @media screen and (min-width: 1200px) {
+    #home {
+      height: 700px; } }
 
 .bar {
   background-color: #62A1FF;
@@ -60,8 +96,16 @@ ul {
   .bar h2 {
     font-family: "Dosis", sans-serif;
     font-weight: 900;
-    font-size: 64px;
-    color: white; }
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 3em; }
+    @media screen and (min-width: 992px) {
+      .bar h2 {
+        font-size: 4em; } }
+    @media screen and (min-width: 1200px) {
+      .bar h2 {
+        font-size: 5em; } }
 
 .btn {
   background-color: none;
