@@ -1,8 +1,9 @@
 ul {
   text-align: left; }
 
-.body {
-  text-align: center; }
+body {
+  text-align: center;
+  overflow-x: hidden; }
 
 .container-fluid {
   padding: 0px; }
@@ -25,7 +26,7 @@ ul {
     vertical-align: top; }
 
 .jumbotron {
-  padding: 0px;
+  margin-top: 10px;
   margin: 0px;
   color: white;
   text-align: center;
@@ -76,10 +77,6 @@ ul {
 #home {
   background-image: url("../images/Profile.jpg");
   height: 400px; }
-  @media screen and (max-width: 768px) {
-    #home {
-      background-image: url("../images/ProfileSmall.jpg");
-      background-size: cover; } }
   @media screen and (min-width: 768px) {
     #home {
       height: 500px; } }
@@ -147,4 +144,4 @@ ul {
   margin: 30px;
   text-align: center; }
 
-/*# sourceMappingURL=sassStyle.css.map */
+/*# sourceMappingURL=style.css.map */
