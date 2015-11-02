@@ -45,7 +45,7 @@ var EPPZScrollTo =
     scrollVerticalTickToPosition: function(currentPosition, targetPosition)
     {
         var filter = 0.2;
-        var fps = 40;
+        var fps = 30;
         var difference = parseFloat(targetPosition) - parseFloat(currentPosition);
 
         // Snap, then stop if arrived.
