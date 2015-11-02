@@ -4,8 +4,7 @@
     <title>Jordan Bryan</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Dosis:700,500|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Dosis:700,500|Nunito:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="static/scss/style.css">
   </head>
 
@@ -27,10 +26,14 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-justified navbar-nav">
-              <li><a class="link" href="#home">Home</a></li>
-              <li><a class="link" href="#experience">Work Experience</a></li>
-              <li><a class="link" href="#education">Education</a></li>
-              <li><a class="link" href="#skateboard">Downhill Skateboarding</a></li>
+              <li><a class="link" onclick="EPPZScrollTo.scrollVerticalToElementById('home', 50);
+" href="#Home">Home</a></li>
+              <li><a class="link" onclick="EPPZScrollTo.scrollVerticalToElementById('experience', 50);
+" href="#experience">Work Experience</a></li>
+              <li><a class="link" onclick="EPPZScrollTo.scrollVerticalToElementById('education', 50);
+" href="#education">Education</a></li>
+              <li><a class="link" onclick="EPPZScrollTo.scrollVerticalToElementById('skateboard', 50);
+" href="#skateboard">Downhill Skateboarding</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -40,7 +43,7 @@
 
     <div class="jumbotron container-fluid block" id="home">
       <h1>Jordan Bryan</h1>
-      <a href="#"class="btn">View Resume</a>
+      <a href="static/resume.pdf" class="btn">View Resume</a>
       <a href="https://www.linkedin.com/profile/view?id=AAMAABZbOsQBhDcg-a5zTR6sO1Q44g8At2MIv3U"class="btn">Connect On LinkedIn</a>
     </div>
 
@@ -142,6 +145,8 @@
             <p>In addition to software development, I am very passionate about downhill skateboarding. I have spent the last few years competing in races accross the country, and I hope to soon compete in the International Downhill Federation world circuit.</p>
           </div>
         </div>
+      </row>
+      <row>
         <div class="col-xs-12">
           <div class="card">
             <h3>Accomplishments</h3>
@@ -173,7 +178,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="static/js/custom.js"></script> -->
+    <script src="static/js/custom.js"></script>
      
   </body>
 </html>
