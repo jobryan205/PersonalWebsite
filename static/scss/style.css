@@ -1,9 +1,10 @@
-ul {
-  text-align: left; }
-
 body {
   text-align: center;
   overflow-x: hidden; }
+
+ul {
+  text-align: left;
+  padding: 0; }
 
 .navbar {
   background-color: white;

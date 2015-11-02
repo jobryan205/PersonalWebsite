@@ -58,10 +58,6 @@ $home-jumbotron-sizes: (
 	$screen-l: 700px
 );
 
-ul {
-	text-align: left;
-}
-
 
 
 @mixin font-size($fs-map) {
@@ -129,7 +125,10 @@ body {
 // 	margin-top: 50px;
 // }
 
-
+ul {
+	text-align: left;
+	padding: 0;
+}
 
 .navbar {
 	background-color: $color-tertiary;
@@ -153,6 +152,7 @@ body {
 
 			&:visited {
 				color: $color-primary;
+				// border-color: red;
 			}
 
 			&:hover {
