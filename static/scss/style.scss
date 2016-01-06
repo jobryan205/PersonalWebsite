@@ -17,6 +17,7 @@ $screen-xs: null;
 $screen-s: 768px;
 $screen-m: 992px;
 $screen-l: 1200px;
+$screen-xl: 1400px;
 
 
 $h3-font-sizes: (
@@ -55,7 +56,8 @@ $home-jumbotron-sizes: (
 	$screen-xs: 400px,
 	$screen-s: 500px,
 	$screen-m: 600px,
-	$screen-l: 700px
+	$screen-l: 700px,
+	$screen-xl: 800px
 );
 
 
@@ -175,10 +177,8 @@ ul {
 	@include height-size($jumbotron-sizes);
 
 	h1 {
-		// margin: 200px;
 		text-align: center;
 		font-family: $font-family-primary;
-		// font-size: 13em;
 		text-shadow: 0 0 30px black;
 		font-weight: 700;
 		color: $color-tertiary;
